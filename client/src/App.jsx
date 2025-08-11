@@ -20,7 +20,7 @@ import Notification from './components/Notification'
 
 const App = () => {
   const {user} = useUser()
-  console.log(user)
+  // console.log(user)
   const {getToken } = useAuth()
   const {pathname} = useLocation()
   const pathnameRef = useRef(pathname)
