@@ -9,6 +9,7 @@ import { useSelector } from 'react-redux'
 const Layout = () => {
 
     const user = useSelector((state)=>state.user.value)
+    console.log(user ? user :`user is not availbale`)
     const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return user ? (

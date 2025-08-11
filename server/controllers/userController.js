@@ -225,6 +225,10 @@ export const getUserConnections = async (req, res) => {
         const {userId} = req.auth()
         const user = await User.findById(userId).populate('connections followers following')
 
+        if (!user) {
+            return res.status(404).json({success: false, message: "User not found"})
+        }
+
         const connections = user.connections
         const followers = user.followers
         const following = user.following
