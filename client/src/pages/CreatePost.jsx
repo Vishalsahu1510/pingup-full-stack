@@ -69,8 +69,8 @@ const CreatePost = () => {
               </div>
             </div>
 
-            {/* Text Area  textarea{resize-none}*/}
-            <textarea className='w-full  max-h-32 mt-4 text-sm outline-none placeholder-gray-400' placeholder="What's happening?" onChange={(e)=>setContent(e.target.value)} value={content}/>
+            {/* Text Area */}
+            <textarea className='w-full resize-none min-h-24 max-h-50 mt-4 text-sm outline-none placeholder-gray-400' placeholder="What's happening?" onChange={(e)=>setContent(e.target.value)} value={content}/>
 
              {/* Images */}
              {
